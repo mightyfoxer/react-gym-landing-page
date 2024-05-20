@@ -1,0 +1,114 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.image-container {
+
+    width: 100%;
+
+    >div {
+        position: unset !important;
+    }
+
+    .image {
+        object-fit: contain;
+        width: 100% !important;
+        position: relative !important;
+        height: unset !important;
+    }
+}
+
+.child {
+    visibility: hidden;
+}
+
+.parent:hover .child {
+    visibility: visible;
+}
+
+option:hover {
+    background-color: '#121212'
+}
+
+input::placeholder {
+    color: '#88898A';
+}
+
+
+.fc-month-button{
+    display: none!important;
+}
+
+.fc-daygrid-day-top {
+    margin-right: 30%;
+    margin-top: 17%;
+    
+}
+.fc-daygrid-day-events {
+    margin-bottom: 0!important;
+    min-height: '5px' !important ;
+}
+
+.fc-daygrid-day-frame, .fc-daygrid-day {
+    max-height: 50px;
+    border-radius: 100%;
+}
+
+/* Hide grid borders in FullCalendar */
+.fc-scrollgrid {
+    border-color: transparent  !important;
+  }
+  
+  .fc-scrollgrid td:last-of-type {
+    border-right-color: transparent  !important;
+  }
+  
+  .fc-scrollgrid-section.fc-scrollgrid-section-body td[role='presentation'] {
+    border-bottom-color: transparent  !important;
+  }
+  
+  [role='row']:last-of-type td {
+    border-bottom-color: transparent  !important;
+  }
+  
+  th[role='presentation'] {
+    border-right-color: transparent  !important;
+  }
+
+  .fc-theme-standard td, .fc-theme-standard th {
+    border-color: transparent!important;
+  }
+
+  /* .fc-scrollgrid-sync-inner {
+} */
+
+/* .fc-day-today {
+      background-color: #34C5F3!important;
+    border-radius: 40px !important;
+  } */
+.fc-col-header-cell-cushion , .fc-daygrid-day-number{
+    color: white!important;
+}
+.fc-toolbar-title {
+    font-weight: bold;
+    font-size: 20px!important;
+    color: white;
+}
+
+.fc-next-button,  .fc-prev-button {
+    background-color: transparent!important;
+    color: white!important;
+    border-color: transparent!important;
+}
+
+.fc-scroller-harness {
+    margin-right: -1px!important;
+    background-color: #222222;
+    border-color: transparent!important;
+}
+
+
+
+.fc-daygrid-day-frame {
+    cursor: pointer;
+}
